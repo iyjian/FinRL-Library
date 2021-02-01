@@ -118,8 +118,8 @@ class DRLAgent:
         )
         return model
 
-    def train_model(self, model, tb_log_name, total_timesteps=5000):
-        model = model.learn(total_timesteps=total_timesteps, tb_log_name=tb_log_name)
+    def train_model(self, model, tb_log_name, total_timesteps=5000, log_interval=100):
+        model = model.learn(total_timesteps=total_timesteps, tb_log_name=tb_log_name, log_interval=log_interval)
         return model
 
 
