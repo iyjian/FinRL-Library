@@ -33,7 +33,7 @@ fe = FeatureEngineer(
                     use_turbulence=False,
                     user_defined_feature = False)
 
-df = pickle.load(open('./../dow_data.p', 'rb'))
+df = pickle.load(open('./dow_data.p', 'rb'))
 
 processed = fe.preprocess_data(df)
 
